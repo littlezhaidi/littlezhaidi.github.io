@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2024 by littlezhaidi (http://jsbin.com/qosatat/5/edit)
+Copyright (c) 2024 by littlezhaidi (http://jsbin.com/qosatat/15/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -14,13 +14,12 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta name="viewport" content="width=device-width">
   <title>Zhaidi X TP 私服資訊站</title>
   
-  <!--字體導入-->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
-  </style>
-
-  <!--以下為css部分-->
+  <!--導入-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="icon" href="favicon.ico">
   
 <style id="jsbin-css">
 @charset "UTF-8"
@@ -29,54 +28,83 @@ html {
   font-size: 100%
 }
 body {
+  font-family: "M PLUS 1p", sans-serif;
+  /*字體有點爆掉請見諒，因為我用的是日文*/
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.7;color: #432;
 }
 a {
+  display: block;
   text-decoration: none;
 }
-.main-nav {
+.logo{
+  width: 210px;
+  /*margin-top: 14px;*/
+}
+.top-nav {
+  list-style: none;
   display: flex;
   font-size= 1.25rem
   margin-top: 34px;
-  list-style: none;
+  background-color: #333
 }
-.main-nav li {
+.top-nav a {
   margin-left: 36px;
+  color: #fff;
 }
-.main-nav a {
-  color: #432;
-}
-.main-nav a:hover {
+.top-nav a:hover {
   color: #0bd;
+}*/
+.page-header{
+  display: flex;
+  justify-content: space-between;
 }
 .wrapper{
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
 }
-
 article{
   margin-left: 30px;
   margin-right: 30px;
   line-height: 2.0;
 }
-
 .article-h2{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+/*.m-plus-1p-regular {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+/*
+from battlecatsinfo
+.topnav {
+  background-color: #333 ;
+  margin-block:0; display: inline-block;
+  width: 100%;
+  text-align: center;
+  }
+
+a {
+  display: block;
+  margin: 0 auto;
+  max-width: min(100%, 430px);
+*/
 </style>
 </head>
 <body>
   <header class="page-header wrapper">
-    <h1>im a picture<a href="ZhaidiXTP.html"><img class="logo" src="" ></a></h1><!-- alt="回到最上層" -->
-    <nav>
-      <ul class="main-nav">
-        <li><a href="#section1">緣起</a></li>
-        <li><a href="#section2">something2</a></li>
-        <li><a href="#section3">something3</a></li>
-      </ul>
-    </nav>
+    <div class="top-nav">
+      <h1><a href="ZhaidiXTP.html"><img class="logo" src="logo-1.png" ></a></h1><!-- alt="回到最上層" -->
+      <!--div id="home" class="nav-bg"-->
+        <a href="#section1">文章</a>
+        <a href="/whitelist.html">白名單</a>
+        <a href="/footage.html">影片及記錄</a>
+    </div>
   </header>
   
   <!--
@@ -85,7 +113,7 @@ article{
     <p>本站不定期更新，主要放置伺服器資訊</p>
     -->
   <article id="#section1">
-    <h2 class="article-h2">緣起,目前只做示範,所以隨便抓一篇之前寫過的文章</h2>
+    <h2 class="article-h2">目前只做示範,所以隨便抓一篇之前寫過的文章</h2>
     <p>最開始的稿子，我把它重新組合變成那篇宣傳圖</p><br>
     <p>discord初期想法<br>
       主要變化:<br>
@@ -107,9 +135,8 @@ article{
       如有任何個人疏失可經由此管道反映，當然也接受私訊<br>
       <br>
       底下的圖片之後會換成別的，今天只是試做</p><br>
-      <img src="https://media.discordapp.net/attachments/803894908174991391/1231812979494883378/dc-demonstrate.png?ex=66272ebc&is=6625dd3c&hm=f32d4ef1622103157b7e0556f543da8be81dda3ac185e86f2c25bb87a55d1e5d&=&format=webp&quality=lossless&width=550&height=303">
+      <img src="https://media.discordapp.net/attachments/803894908174991391/1231812979494883378/dc-demonstrate.png?ex=6628803c&is=66272ebc&hm=d340e55a068b47986f4ba851643acbc36ee76807c42e372e1f1369deb6d168b2&=&format=webp&quality=lossless">
   </article>
-  <!-- /.home-content -->
- 
+  
 </body>
 </html>
